@@ -97,3 +97,9 @@ Read `templates/cta.md`. Display the closing pitch.
 - **No hype in the output.** The profile must be clinical and precise.
 - **The guardrails must be specific.** Not "be professional" but "sentences under 14 words, no passive voice, never open with a question."
 - **The profile is theirs to keep.** It's portable. They can use it anywhere. That's the point.
+
+## Related Skills
+
+- **[Digital Twin](https://github.com/whystrohm/digital-twin-of-yourself)** — Goes deeper than a website voice profile. Extracts decision logic, cognitive patterns, and knowledge boundaries from your actual writing. Includes [15 stress tests](https://github.com/whystrohm/digital-twin-of-yourself/blob/main/validation/STRESS_TESTS.md) to validate the extraction.
+- **Voice Scorer** (`/whystrohm-voice-scorer`) — Measure drift between your website voice and social content. Uses the same voice dimensions this skill extracts.
+- **Content Audit** (`/whystrohm-audit` or [GitHub](https://github.com/whystrohm/whystrohm-audit)) — Full 5-layer diagnostic that scores your content and rewrites one piece live.
