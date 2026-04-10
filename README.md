@@ -134,16 +134,16 @@ whystrohm-voice-extract/
 
 This skill extracts a voice profile in 60 seconds.
 
-A full content infrastructure install takes that profile and turns it into 40-60 enforceable guardrails, a video production pipeline, multi-platform automation, and a content engine your team owns completely. Built in 30 days. You own everything. No retainer.
+A full content infrastructure install takes that profile and turns it into 40-60 enforceable guardrails, a video production pipeline, multi-platform automation, and a content engine I run for you every month. Starting at $3,000/month. 30 minutes of your time per week. You own everything I build.
 
 **Score your content:** [whystrohm.com/scan](https://whystrohm.com/scan)
-**Book a call:** [whystrohm.com/audit](https://whystrohm.com/audit)
+**Book a call:** [whystrohm.com/pricing](https://whystrohm.com/pricing)
 
 ---
 
 ## About WhyStrohm
 
-[WhyStrohm](https://whystrohm.com) builds content infrastructure for founder-led companies doing $500K-$5M. One person. 10+ years in defense systems engineering. No templates. No outsourcing. Systems that run your brand — built and handed over.
+[WhyStrohm](https://whystrohm.com) is the creative engine for founder-led companies doing $100K+. One person. 10+ years in defense systems engineering. No templates. No outsourcing. Systems that run your brand — built, run, and owned by you.
 
 ## License
 
