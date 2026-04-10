@@ -125,6 +125,7 @@ whystrohm-voice-extract/
 
 | Skill | What It Does | Install |
 |-------|-------------|---------|
+| [Digital Twin](https://github.com/whystrohm/digital-twin-of-yourself) | Reverse-engineer how you think and talk. Stress-tested AI System Prompt of yourself. | `git clone ...digital-twin-of-yourself.git ~/.claude/skills/digital-twin` |
 | [Content Audit](https://github.com/whystrohm/whystrohm-audit) | Score content against 5 layers, get a live rewrite | `git clone ...whystrohm-audit.git ~/.claude/skills/whystrohm-audit` |
 | [Voice Scorer](https://github.com/whystrohm/whystrohm-voice-scorer) | Measure voice drift between your website and social content | `git clone ...whystrohm-voice-scorer.git ~/.claude/skills/whystrohm-voice-scorer` |
 
@@ -144,6 +145,12 @@ A full content infrastructure install takes that profile and turns it into 40-60
 ## About WhyStrohm
 
 [WhyStrohm](https://whystrohm.com) is the creative engine for founder-led companies doing $100K+. One person. 10+ years in defense systems engineering. No templates. No outsourcing. Systems that run your brand — built, run, and owned by you.
+
+## Brand Infrastructure Consulting
+
+This skill is one piece of the brand infrastructure I build for founder-led brands. Voice extraction, programmatic video, automated publishing. One operator, full stack. You own everything.
+
+→ [whystrohm.com/pricing](https://whystrohm.com/pricing?utm_source=github&utm_medium=repo-cta&utm_campaign=2026-04-10-closed-loop)
 
 ## License
 
