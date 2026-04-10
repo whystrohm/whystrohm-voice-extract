@@ -137,7 +137,7 @@ This skill extracts a voice profile in 60 seconds.
 
 A full content infrastructure install takes that profile and turns it into 40-60 enforceable guardrails, a video production pipeline, multi-platform automation, and a content engine I run for you every month. Starting at $3,000/month. 30 minutes of your time per week. You own everything I build.
 
-**Score your content:** [whystrohm.com/scan](https://whystrohm.com/scan)
+**Score your content:** [whystrohm.com/scan](https://whystrohm.com/scan?utm_source=github&utm_medium=repo-cta&utm_campaign=2026-04-10-closed-loop)
 **Book a call:** [whystrohm.com/pricing](https://whystrohm.com/pricing?utm_source=github&utm_medium=repo-cta&utm_campaign=2026-04-10-closed-loop)
 
 ---
