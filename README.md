@@ -142,6 +142,15 @@ A full content infrastructure install takes that profile and turns it into 40-60
 
 ---
 
+## Other WhyStrohm Skills
+
+| Skill | What It Does | Install |
+|-------|-------------|---------|
+| [**Ritual**](https://github.com/whystrohm/ritual) **· NEW** | Scans your machine, ranks your top 5 automation candidates, drafts a Claude Code scheduled trigger that runs Voice Extract across every brand on a cadence. | [Download `.skill` ↗](https://github.com/whystrohm/ritual/releases/latest) |
+| [Digital Twin](https://github.com/whystrohm/digital-twin-of-yourself) | Reverse-engineer how you think and talk. Stress-tested AI System Prompt of yourself. | `git clone https://github.com/whystrohm/digital-twin-of-yourself.git ~/.claude/skills/digital-twin` |
+| [Content Audit](https://github.com/whystrohm/whystrohm-audit) | Score your content against a 5-layer framework, get a live rewrite. | `git clone https://github.com/whystrohm/whystrohm-audit.git ~/.claude/skills/whystrohm-audit` |
+| [Voice Scorer](https://github.com/whystrohm/whystrohm-voice-scorer) | Measure voice drift between your website and social content. | `git clone https://github.com/whystrohm/whystrohm-voice-scorer.git ~/.claude/skills/whystrohm-voice-scorer` |
+
 ## About WhyStrohm
 
 [WhyStrohm](https://whystrohm.com) is the creative engine for founder-led companies doing $100K+. One person. 10+ years in defense systems engineering. No templates. No outsourcing. Systems that run your brand — built, run, and owned by you.
