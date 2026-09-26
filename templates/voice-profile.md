@@ -87,6 +87,9 @@ Display the generated guardrails from `rules/guardrail-generator.md` output.
   Use it to brief writers, evaluate content, or build
   internal style documentation.
 
+  Saved as brand/voice-profile.json. The voice scorer
+  and other WhyStrohm skills read that file.
+
   It's a snapshot, not a system. A system checks
   content against these patterns before it ships.
   A profile just describes them.

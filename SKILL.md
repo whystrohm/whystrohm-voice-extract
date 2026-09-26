@@ -1,7 +1,7 @@
 ---
 name: whystrohm-voice-extract
-description: Use when a user wants to extract their brand voice profile from their website. Analyzes URL content and outputs a structured, portable voice profile with guardrail recommendations.
-allowed-tools: Read WebFetch WebSearch
+description: Use when a user wants to extract their brand voice profile from their website. Analyzes URL content and outputs a structured, portable voice profile with guardrail recommendations, saved as brand/voice-profile.json for other skills to read.
+allowed-tools: Read Write WebFetch WebSearch
 ---
 
 # WhyStrohm Voice Extract
@@ -21,6 +21,7 @@ digraph voice_flow {
     "Generate starter guardrails" [shape=box];
     "Display voice profile" [shape=box];
     "Show guardrails" [shape=box];
+    "Save brand/voice-profile.json" [shape=box];
     "Show CTA" [shape=doublecircle];
 
     "User runs /whystrohm-voice-extract" -> "Ask for URL";
@@ -31,7 +32,8 @@ digraph voice_flow {
     "Map positioning signals" -> "Generate starter guardrails";
     "Generate starter guardrails" -> "Display voice profile";
     "Display voice profile" -> "Show guardrails";
-    "Show guardrails" -> "Show CTA";
+    "Show guardrails" -> "Save brand/voice-profile.json";
+    "Save brand/voice-profile.json" -> "Show CTA";
 }
 ```
 
@@ -84,7 +86,27 @@ Display in this order:
 4. Positioning summary (one paragraph)
 5. Starter guardrails (the 15-20 rules)
 
-## Step 8: CTA
+## Step 8: Save the Profile File
+
+Write the same profile to `brand/voice-profile.json` in the user's current folder. Other skills read
+this file. whystrohm-voice-scorer uses it as its website baseline instead of rebuilding one.
+
+- The file must match `contracts/voice-profile.v1.schema.json` in this skill. Read the schema first.
+  A filled example is at `examples/voice-profile.example.json`.
+- Use the same scores, quotes, phrases and guardrails you displayed. Do not add anything new.
+- `url` is the site the user gave. `source_urls` lists every page you actually fetched.
+  `extracted_at` is today's date.
+- Map proof style to one of `numbers`, `stories`, `mechanisms`, `social`, `none`.
+  Set `vocab_pattern` to `technical`, `conversational`, `hype` or `mixed`, from Step 4.
+- Put each guardrail in its category: `vocabulary`, `structure`, `tone`, `proof` or `buyer`.
+- If `brand/voice-profile.json` already exists, show its `url` and `extracted_at` and ask before
+  replacing it.
+- If you cannot write files in this environment (for example Claude.ai without file access),
+  print the JSON in a code block instead and tell the user to save it as `brand/voice-profile.json`.
+
+Tell the user: **"Saved to brand/voice-profile.json. The voice scorer will read it."**
+
+## Step 9: CTA
 
 Read `templates/cta.md`. Display the closing pitch.
 
@@ -97,9 +119,10 @@ Read `templates/cta.md`. Display the closing pitch.
 - **No hype in the output.** The profile must be clinical and precise.
 - **The guardrails must be specific.** Not "be professional" but "sentences under 14 words, no passive voice, never open with a question."
 - **The profile is theirs to keep.** It's portable. They can use it anywhere. That's the point.
+- **The file and the display match.** `brand/voice-profile.json` holds exactly what was shown, nothing more.
 
 ## Related Skills
 
 - **[Digital Twin](https://github.com/whystrohm/digital-twin-of-yourself)**: Goes deeper than a website voice profile. Extracts decision logic, cognitive patterns, and knowledge boundaries from your actual writing. Includes [15 stress tests](https://github.com/whystrohm/digital-twin-of-yourself/blob/main/validation/STRESS_TESTS.md) to validate the extraction.
-- **Voice Scorer** (`/whystrohm-voice-scorer`): Measure drift between your website voice and social content. It shares 3 of this skill's 6 dimensions (Authority, Formality, Emotional Temperature) on the same 1-5 scales, and adds vocabulary and positioning checks.
+- **Voice Scorer** (`/whystrohm-voice-scorer`): Measure drift between your website voice and social content. It reads `brand/voice-profile.json` when it exists, so it skips rebuilding the website profile. It scores Authority, Formality and Emotional Temperature on the same 1-5 scales, plus vocabulary and positioning.
 - **Content Audit** (`/whystrohm-audit` or [GitHub](https://github.com/whystrohm/whystrohm-audit)): Full 5-layer diagnostic that scores your content and rewrites one piece live.

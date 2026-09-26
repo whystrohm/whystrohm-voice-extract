@@ -3,6 +3,9 @@
 ## [Unreleased]
 
 ### Added
+- The profile is saved as `brand/voice-profile.json`, in the shared format in `contracts/voice-profile.v1.schema.json`. whystrohm-voice-scorer reads it.
+- `examples/voice-profile.example.json`, a filled profile for a fictional brand.
+- CI checks the schema, the example, and that the schema matches the canonical copy in whystrohm/shotkit.
 - Social preview image and demo GIF.
 - README and SKILL.md links to Digital Twin, Voice Scorer, Content Audit, and Ritual.
 

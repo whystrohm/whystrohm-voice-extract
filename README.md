@@ -19,7 +19,7 @@ Your website already has a voice. This skill quantifies it: 6 dimensions scored,
 | **3. Vocabulary** | Extracts signature phrases, power words, and notably absent language |
 | **4. Position** | Maps what you call yourself, who you serve, and how you differentiate |
 | **5. Guardrails** | Generates 15-20 specific, enforceable content rules based on YOUR voice |
-| **6. Export** | Outputs a portable voice profile you can copy and use anywhere |
+| **6. Export** | Shows the profile and saves it as `brand/voice-profile.json`, which the voice scorer reads |
 
 ## The 6 Dimensions
 
@@ -112,6 +112,10 @@ whystrohm-voice-extract/
 ├── templates/
 │   ├── voice-profile.md          # Output formatting
 │   └── cta.md                    # Closing pitch
+├── contracts/
+│   └── voice-profile.v1.schema.json  # Format of brand/voice-profile.json (shared)
+├── examples/
+│   └── voice-profile.example.json    # Example profile, fictional brand
 ├── CLAUDE.md                     # Contributor guide for AI agents
 ├── .github/                      # Issue templates, PR template
 ├── CHANGELOG.md                  # Version history

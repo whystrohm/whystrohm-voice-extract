@@ -24,4 +24,4 @@ This skill runs entirely within Claude Code. It:
 
 - Website content is fetched and analyzed within the session only
 - No data is sent to WhyStrohm or any third party
-- Voice profiles are displayed to the user and not persisted
+- Voice profiles are displayed to the user and saved to `brand/voice-profile.json` in the user's current folder. Nothing is saved anywhere else.
