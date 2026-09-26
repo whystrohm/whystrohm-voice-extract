@@ -56,6 +56,17 @@ How do they substantiate claims?
 | Social | "Trusted by [N] companies" |
 | None | Claims with no adjacent proof |
 
+## 6. Vocabulary Pattern
+
+One label for the overall register. It goes in `vocab_pattern` in the saved file.
+
+| Pattern | What it looks like |
+|---------|---------|
+| technical | Industry terms and precise nouns in most paragraphs; reads like documentation |
+| conversational | Plain words, contractions, second person; reads like talking |
+| hype | Superlatives, urgency and enthusiasm verbs outweigh concrete nouns |
+| mixed | No single pattern covers most of the pages |
+
 ## Output Format
 
 ```

@@ -48,7 +48,7 @@ One question. Wait for the answer.
 Use WebFetch to pull:
 1. Homepage
 2. About page (try /about, /about-us, /who-we-are, /our-story, /team)
-3. Most recent blog post OR services page (try /blog, /services, /what-we-do)
+3. Most recent blog post OR services page (try /blog, /services, /what-we-do). If /blog is an index, open the newest post it links to.
 
 Tell the user: "Pulling your site now. Analyzing voice patterns, positioning, and vocabulary..."
 
@@ -93,11 +93,12 @@ this file. whystrohm-voice-scorer uses it as its website baseline instead of reb
 
 - The file must match `contracts/voice-profile.v1.schema.json` in this skill. Read the schema first.
   A filled example is at `examples/voice-profile.example.json`.
-- Use the same scores, quotes, phrases and guardrails you displayed. Do not add anything new.
+- Use the same scores, quotes, phrases and guardrails you displayed. Do not add new findings. The file also needs a few labels the display does not show (`vocab_pattern`, `leads_with`, `paragraph_style`); take them from your Step 4 and Step 5 analysis.
 - `url` is the site the user gave. `source_urls` lists every page you actually fetched.
   `extracted_at` is today's date.
 - Map proof style to one of `numbers`, `stories`, `mechanisms`, `social`, `none`.
-  Set `vocab_pattern` to `technical`, `conversational`, `hype` or `mixed`, from Step 4.
+  If the display names a primary and a secondary proof style, the file takes the primary.
+  Set `vocab_pattern` using section 6 of `rules/vocabulary-analysis.md`.
 - Put each guardrail in its category: `vocabulary`, `structure`, `tone`, `proof` or `buyer`.
 - If `brand/voice-profile.json` already exists, show its `url` and `extracted_at` and ask before
   replacing it.
@@ -119,7 +120,7 @@ Read `templates/cta.md`. Display the closing pitch.
 - **No hype in the output.** The profile must be clinical and precise.
 - **The guardrails must be specific.** Not "be professional" but "sentences under 14 words, no passive voice, never open with a question."
 - **The profile is theirs to keep.** It's portable. They can use it anywhere. That's the point.
-- **The file and the display match.** `brand/voice-profile.json` holds exactly what was shown, nothing more.
+- **The file and the display match.** Every score, quote, phrase and guardrail in `brand/voice-profile.json` is one the user saw.
 
 ## Related Skills
 
