@@ -31,10 +31,10 @@ Categories:
 Words that are conspicuously absent. This is often more revealing than what they use.
 
 Check for absence of:
-- Hype words (revolutionary, game-changing, disruptive) — absence = disciplined
-- Hedging words (might, maybe, hopefully) — absence = confident
-- Filler phrases (in order to, at the end of the day, leverage) — absence = tight writing
-- Competitor-typical words — what does their industry usually say that they don't?
+- Hype words (revolutionary, game-changing, disruptive): absence = disciplined
+- Hedging words (might, maybe, hopefully): absence = confident
+- Filler phrases (in order to, at the end of the day, leverage): absence = tight writing
+- Competitor-typical words: what does their industry usually say that they don't?
 
 ## 4. Sentence Patterns
 
@@ -48,12 +48,12 @@ Check for absence of:
 
 How do they substantiate claims?
 
-| Style | Example |
+| Style | Example shape (what a site might say) |
 |-------|---------|
-| Numbers | "290+ compositions," "6-day cycle → 4 hours" |
+| Numbers | "[N] projects shipped," "[X]-day cycle cut to [Y] hours" |
 | Stories | "One client came to us after..." |
 | Mechanisms | "The system works by extracting..." |
-| Social | "Trusted by 500+ companies" |
+| Social | "Trusted by [N] companies" |
 | None | Claims with no adjacent proof |
 
 ## Output Format

@@ -5,7 +5,7 @@ description: How to generate starter content guardrails from a voice profile
 
 # Guardrail Generator
 
-Based on the voice profile and vocabulary analysis, generate 15-20 specific, enforceable content rules. These are starter guardrails — the kind of rules that would be encoded into a full content infrastructure system.
+Based on the voice profile and vocabulary analysis, generate 15-20 specific, enforceable content rules. These are starter guardrails: the kind of rules a full content infrastructure system would write down and check.
 
 ## What Makes a Good Guardrail
 
@@ -15,13 +15,13 @@ Based on the voice profile and vocabulary analysis, generate 15-20 specific, enf
 **Good guardrail:** "Never use 'passionate,' 'excited,' 'thrilled,' or 'proud' in any content."
 **Bad guardrail:** "Avoid hype words."
 
-**Good guardrail:** "Every claim must have proof within 2 sentences — a number, timeframe, named outcome, or mechanism."
+**Good guardrail:** "Every claim must have proof within 2 sentences: a number, timeframe, named outcome, or mechanism."
 **Bad guardrail:** "Back up your claims."
 
 Every guardrail must be:
-- **Specific** — a person (or system) can check compliance in 5 seconds
-- **Binary** — it either passes or fails, no judgment calls
-- **Derived from the actual voice** — not generic best practices
+- **Specific**: a person (or system) can check compliance at a glance
+- **Binary**: it either passes or fails, no judgment calls
+- **Derived from the actual voice**, not generic best practices
 
 ## Categories
 
@@ -42,7 +42,7 @@ Based on sentence/paragraph patterns:
 
 ### 3. Tone Rules (3-4 rules)
 Based on voice dimensions:
-- Authority level to maintain (e.g., "never hedge — no 'we think' or 'we believe'")
+- Authority level to maintain (e.g., "never hedge: no 'we think' or 'we believe'")
 - Formality markers (contractions OK? slang OK?)
 - Emotional boundaries (exclamation marks allowed? how many per piece?)
 
@@ -96,15 +96,15 @@ STARTER GUARDRAILS
 
 ════════════════════════════════════
 
-These are starter guardrails — enough to catch the
+These are starter guardrails, enough to catch the
 biggest voice drift issues. A full system install
-produces 40-60 rules calibrated to your specific
-brand, enforced automatically.
+writes a longer rule set calibrated to your brand
+and checks content against it before it ships.
 ```
 
 ## Important
 
 - Guardrails must feel EARNED from the analysis, not generic.
-- Reference specific evidence: "Your site uses short sentences (avg 9 words) — maintain this."
+- Reference specific evidence. Example: "Your site uses short sentences (avg [N] words). Maintain this." Use the number you measured.
 - If their voice is already strong in an area, say so and make the guardrail about protecting that strength.
 - If their voice is weak in an area, make the guardrail about fixing the gap.

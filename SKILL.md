@@ -48,7 +48,7 @@ Use WebFetch to pull:
 2. About page (try /about, /about-us, /who-we-are, /our-story, /team)
 3. Most recent blog post OR services page (try /blog, /services, /what-we-do)
 
-Tell the user: "Pulling your site now — analyzing voice patterns, positioning, and vocabulary..."
+Tell the user: "Pulling your site now. Analyzing voice patterns, positioning, and vocabulary..."
 
 If a page doesn't exist, skip it. You need at least the homepage.
 
@@ -78,7 +78,7 @@ Read `rules/guardrail-generator.md`. Based on the voice profile and vocabulary a
 Read `templates/voice-profile.md`. Follow the format exactly.
 
 Display in this order:
-1. Voice dimensions (the radar) — let it land
+1. Voice dimensions (the radar). Let it land.
 2. Key phrases (their distinctive language)
 3. Vocabulary patterns (what they use, what they avoid)
 4. Positioning summary (one paragraph)
@@ -100,6 +100,6 @@ Read `templates/cta.md`. Display the closing pitch.
 
 ## Related Skills
 
-- **[Digital Twin](https://github.com/whystrohm/digital-twin-of-yourself)** — Goes deeper than a website voice profile. Extracts decision logic, cognitive patterns, and knowledge boundaries from your actual writing. Includes [15 stress tests](https://github.com/whystrohm/digital-twin-of-yourself/blob/main/validation/STRESS_TESTS.md) to validate the extraction.
-- **Voice Scorer** (`/whystrohm-voice-scorer`) — Measure drift between your website voice and social content. Uses the same voice dimensions this skill extracts.
-- **Content Audit** (`/whystrohm-audit` or [GitHub](https://github.com/whystrohm/whystrohm-audit)) — Full 5-layer diagnostic that scores your content and rewrites one piece live.
+- **[Digital Twin](https://github.com/whystrohm/digital-twin-of-yourself)**: Goes deeper than a website voice profile. Extracts decision logic, cognitive patterns, and knowledge boundaries from your actual writing. Includes [15 stress tests](https://github.com/whystrohm/digital-twin-of-yourself/blob/main/validation/STRESS_TESTS.md) to validate the extraction.
+- **Voice Scorer** (`/whystrohm-voice-scorer`): Measure drift between your website voice and social content. It shares 3 of this skill's 6 dimensions (Authority, Formality, Emotional Temperature) on the same 1-5 scales, and adds vocabulary and positioning checks.
+- **Content Audit** (`/whystrohm-audit` or [GitHub](https://github.com/whystrohm/whystrohm-audit)): Full 5-layer diagnostic that scores your content and rewrites one piece live.

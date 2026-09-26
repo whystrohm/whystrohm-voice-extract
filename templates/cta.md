@@ -15,33 +15,32 @@ Display this after the full voice profile output.
 This profile describes your voice. It doesn't enforce it.
 
 A full content infrastructure install takes this profile
-and turns it into 40-60 enforceable guardrails — rules
-that content runs through before it ships. Not guidelines
-someone ignores. Code that catches drift automatically.
+and turns it into a longer set of enforceable guardrails:
+rules that content runs through before it ships. Not
+guidelines someone ignores. Checks that catch drift.
 
 What the full system adds:
-  - Voice rules enforced on every piece of content
+  - Voice rules checked on every piece of content
   - Content templates calibrated to your specific voice
-  - Video pipeline that renders in your brand automatically
-  - Multi-platform scheduling and distribution
-  - Complete documentation and handover — you own it all
+  - Video pipeline that renders in your brand
+  - Scheduled publishing across platforms
+  - Complete documentation and handover. You own it all.
 
-30-day build. You own everything. No retainer.
-
-See what your content scores against the full framework:
+See what your site scores against the full framework:
 https://whystrohm.com/scan
 
-Or book a 30-minute infrastructure call:
-https://whystrohm.com/audit
+See how the full system is built:
+https://whystrohm.com/system
 
 ═══════════════════════════════════════════════════
 
-Built by WhyStrohm — content infrastructure for founder-led companies.
+Built by WhyStrohm. Content infrastructure for founder-led companies.
 whystrohm.com
 ```
 
 ## Rules
-- Do NOT modify the pitch copy.
+- Do NOT modify the pitch copy without the maintainer's sign-off.
+- Do not add prices or pricing-model claims.
 - Do not add urgency, scarcity, or "limited spots" language.
 - Do not add emojis.
 - The profile speaks for itself. The CTA just names the next step.

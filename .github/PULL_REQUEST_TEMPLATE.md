@@ -5,18 +5,18 @@
 ## Which files were modified?
 
 - [ ] `SKILL.md` (flow/orchestration)
-- [ ] `rules/scoring-rubric.md` (scoring criteria)
-- [ ] `rules/voice-analysis.md` (voice inference)
-- [ ] `rules/rewrite-rules.md` (transformation rules)
-- [ ] `templates/audit-report.md` (output formatting)
-- [ ] `templates/cta.md` (CTA copy/link)
+- [ ] `rules/voice-dimensions.md` (the 6 dimensions and how each is scored)
+- [ ] `rules/vocabulary-analysis.md` (vocabulary fingerprint)
+- [ ] `rules/guardrail-generator.md` (starter guardrails)
+- [ ] `templates/voice-profile.md` (output formatting)
+- [ ] `templates/cta.md` (CTA copy/links)
 - [ ] Other:
 
 ## Testing
 
-- [ ] Ran `/whystrohm-audit` in a fresh Claude Code session
-- [ ] Verified the full flow completes (URL scrape → questions → score → rewrite → CTA)
-- [ ] Confirmed output matches expected formatting
+- [ ] Ran `/whystrohm-voice-extract` in a fresh Claude Code session
+- [ ] Verified the full flow completes (URL → scrape → dimensions → vocabulary → positioning → guardrails → profile → CTA)
+- [ ] Confirmed output matches the format in `templates/voice-profile.md`
 
 ## Why this change?
 

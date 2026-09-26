@@ -1,12 +1,12 @@
-# WhyStrohm Voice Extract — Contributor Guide
+# WhyStrohm Voice Extract: Contributor Guide
 
 This is a Claude Code skill that extracts brand voice profiles from websites.
 
 ## Structure
 
-- `SKILL.md` — The orchestrator. Controls the flow. This is what Claude Code reads when the skill is invoked.
-- `rules/` — Framework files. Voice dimensions, vocabulary analysis, guardrail generation.
-- `templates/` — Output formats. Voice profile display, CTA.
+- `SKILL.md`: The orchestrator. Controls the flow. This is what Claude Code reads when the skill is invoked.
+- `rules/`: Framework files. Voice dimensions, vocabulary analysis, guardrail generation.
+- `templates/`: Output formats. Voice profile display, CTA.
 
 ## Key Rules
 
@@ -16,7 +16,7 @@ This is a Claude Code skill that extracts brand voice profiles from websites.
 4. **Guardrails must be specific.** "Sentences under 14 words" not "keep it short."
 5. **The profile is portable.** Users should be able to copy-paste it anywhere.
 6. **One question only.** The URL. No registration, no multi-step intake.
-7. **CTA copy is locked.** Don't modify templates/cta.md pitch text.
+7. **CTA copy is locked.** Don't modify templates/cta.md pitch text without the maintainer's sign-off. No prices in any file.
 
 ## Testing
 

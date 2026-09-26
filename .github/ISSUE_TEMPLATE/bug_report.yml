@@ -1,5 +1,5 @@
 name: Bug Report
-description: The skill produced unexpected output or broke during the audit
+description: The skill produced unexpected output or broke during the voice extraction
 title: "[Bug]: "
 labels: ["bug"]
 body:
@@ -26,16 +26,21 @@ body:
     attributes:
       label: Which step broke?
       options:
-        - URL scrape (Step 1-2)
-        - Questions (Step 3-4)
-        - Scoring (Step 5)
-        - Report display (Step 6)
-        - Rewrite (Step 7-8)
-        - Before/After display (Step 9)
-        - CTA (Step 10)
+        - URL and scrape (Step 1-2)
+        - Voice dimensions (Step 3)
+        - Vocabulary patterns (Step 4)
+        - Positioning signals (Step 5)
+        - Starter guardrails (Step 6)
+        - Voice profile display (Step 7)
+        - CTA (Step 8)
         - Other
     validations:
       required: true
+  - type: input
+    id: url
+    attributes:
+      label: Website URL (if you can share it)
+      description: The public site you ran the extraction on
   - type: textarea
     id: what-happened
     attributes:
@@ -50,8 +55,8 @@ body:
     validations:
       required: true
   - type: textarea
-    id: content-sample
+    id: output-sample
     attributes:
-      label: Content sample (if relevant)
-      description: Paste the content you were auditing, or a sanitized version
+      label: Output sample (if relevant)
+      description: Paste the part of the voice profile that looks wrong
       render: text

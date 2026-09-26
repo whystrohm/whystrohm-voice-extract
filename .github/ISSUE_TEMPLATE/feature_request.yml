@@ -1,5 +1,5 @@
 name: Feature Request
-description: Suggest an improvement to the audit skill
+description: Suggest an improvement to the voice extract skill
 title: "[Feature]: "
 labels: ["enhancement"]
 body:
@@ -8,12 +8,12 @@ body:
     attributes:
       label: Which area?
       options:
-        - Scoring rubric (add/modify layers or criteria)
-        - Voice analysis (how brand voice is inferred)
-        - Rewrite rules (how content gets fixed)
-        - Report format (how results are displayed)
-        - Flow (how the audit progresses)
-        - CTA / booking experience
+        - Voice dimensions (add/modify dimensions or criteria)
+        - Vocabulary analysis
+        - Guardrail generator
+        - Profile format (how results are displayed)
+        - Flow (how the extraction progresses)
+        - CTA
         - Documentation
         - Other
     validations:
@@ -27,7 +27,7 @@ body:
   - type: textarea
     id: why
     attributes:
-      label: Why does this improve the audit?
+      label: Why does this improve the extraction?
       description: How does this help the end user?
     validations:
       required: true
@@ -35,4 +35,4 @@ body:
     id: example
     attributes:
       label: Example (optional)
-      description: If proposing a scoring change, show a before/after of how scoring would differ
+      description: If proposing a scoring change, show how a profile would differ
