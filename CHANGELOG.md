@@ -13,11 +13,11 @@
 
 ### Changed
 - CTAs link straight to https://whystrohm.com/scan and https://whystrohm.com/system. README links carry UTM tags.
-- The CTA and README no longer state prices or a pricing model.
+- The CTA and README point to whystrohm.com/scan and whystrohm.com/system for next steps.
 - The README has one Other WhyStrohm Skills table.
 - The PR template and issue templates name this skill's files and steps.
 - The Voice Scorer cross-reference states which dimensions the two skills share.
-- Copy no longer makes speed claims or uses em dashes. The sample profile is labelled as an example.
+- Copy uses short, plain statements. The sample profile is labelled as an example.
 
 ## [1.0.0] - 2026-03-28
 
